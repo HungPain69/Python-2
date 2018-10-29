@@ -1,0 +1,28 @@
+<h2>Order ID {{ order.id }}</h2>
+
+<table border="1">
+    <tr>
+        <th>Ordered date</th>
+        <td>{{ order.date }}</td>
+    </tr>
+    <tr>
+        <th>Payment type</th>
+        <td>{{ order.payment_type }}</td>
+    </tr>
+    <tr>
+        <th>Status</th>
+        <td>{{ order.status }}</td>
+    </tr>
+    <tr>
+        <th>Customer</th>
+        <td>{{ order.customer_id.forename }}</td>
+    </tr>
+    <tr>
+        <th>Delivery to</th>
+        <td>{{ order.delivery_add_id.add1 }}</td>
+    </tr>
+    <tr>
+        <th>Product ordered</th>
+        <td>{{ order.id.product_id.name }}</td>
+    </tr>
+</table>

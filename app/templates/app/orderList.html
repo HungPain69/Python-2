@@ -1,0 +1,8 @@
+<h2>Order</h2>
+
+<ul>
+{% for order in order_list%}
+     
+    <li>{{order.id}} <a href="{% url 'orderDetail' order.id %}"><input type="button" value="View"></a> </li>
+{% endfor %}
+</ul>
